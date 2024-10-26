@@ -1,0 +1,101 @@
+* {
+  background: #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: tahoma;
+  font-weight: 100;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+h3 {
+  background-color: #4d2d18;
+  text-align: center;
+  width: 100%;
+}
+
+form,
+table,
+td,
+th,
+input,
+#products,
+#logs,
+#requests,
+label,
+.prod_field,
+h2,.reqProd,.logs, .actions{
+  background: #4c6444;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+aside{
+  background: #4d2d18;
+  position:fixed;
+}
+
+nav {
+  background: #4d2d18;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:start;
+}
+
+a {
+  background: #4c6444;
+  margin: 1em;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#products,
+#logs,
+#requests {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #4d2d18;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+/*form inputs and other styles in the product section*/
+
+.prod_field {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+input {
+  outline: none;
+  border: 1px solid #4d2d18;
+  padding: 2px;
+  margin: 5px;
+}
+
+label {
+  margin: 5px;
+}
+/* end*/
+
+/*request styles*/
+table {
+  border-collapse: collapse;
+  padding: 10px;
+  background: #4c6444;
+  margin: 5px;
+}
+td,th {
+  border: 1px solid #4d2d18;
+  padding: 5px;
+}
