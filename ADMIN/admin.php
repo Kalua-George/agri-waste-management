@@ -19,7 +19,7 @@
           <a href="" id="logslink"> SYSTEM LOGS</a>
         </nav>
       </section>
-      <section>
+      <section class="center">
         <div id="products">
           <h3>PRODUCT ACTIONS</h3>
           <div id="addProd">
@@ -37,7 +37,7 @@
                 <label for="contact">SELLER</label>
                 <input type="text" id="contact" required />
               </div>
-              <input type="submit" value="ADD" />
+              <input type="submit" value="ADD" class="add" />
             </form>
           </div>
           <div id="delProd">
@@ -56,7 +56,7 @@
                 <input type="text" id="contact" required />
               </div>
 
-              <input type="submit" value="DELETE" />
+              <input type="submit" value="DELETE" class="delete"/>
             </form>
           </div>
         </div>
@@ -80,10 +80,10 @@
                   <td>Laptop Stand</td>
                   <td>2024-10-24</td>
                   <td>
-                    <button class="approve-btn" onclick="approveRequest()">
+                    <button class="add" onclick="approveRequest()">
                       Approve
                     </button>
-                    <button class="reject-btn" onclick="rejectRequest()">
+                    <button class="delete" onclick="rejectRequest()">
                       Reject
                     </button>
                   </td>

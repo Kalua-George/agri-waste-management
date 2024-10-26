@@ -32,11 +32,17 @@ h2,.reqProd,.logs, .actions{
 }
 main {
   display: flex;
-  justify-content: center;
+  
 }
-aside{
+.aside{
+  height: 100%;
   background: #4d2d18;
   position:fixed;
+}
+  .center {
+    margin-left: 200px; /* Add left margin equal to the width of the aside */
+    flex-grow: 1; /* Allow the center section to take the remaining space */
+    padding: 20px; /* Add some padding */
 }
 
 nav {
@@ -97,5 +103,22 @@ table {
 }
 td,th {
   border: 1px solid #4d2d18;
+  padding: 5px;
+}
+
+.delete{
+  background-color: red;
+
+}
+.add{
+  background: greenyellow;
+}
+
+.add, .delete{
+  border:none;
+  border-radius: 2px;
+}
+
+button{
   padding: 5px;
 }
