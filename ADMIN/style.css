@@ -61,6 +61,17 @@ a {
   border-radius: 5px;
 }
 
+#product{
+  display: none;
+}
+#logs{
+  display: none;
+}
+
+#requests{
+  display: none\s;
+}
+
 #products,
 #logs,
 #requests {

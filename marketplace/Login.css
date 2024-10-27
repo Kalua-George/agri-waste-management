@@ -1,0 +1,138 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #052e45, #0e7a99);
+}
+
+/* Main Container */
+#mcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 800px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Containers */
+.container1 {
+    flex: 1;
+    background-color: #1E2D25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.container1 h2 {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.container1 h2 span {
+    color: #2E7D32;
+}
+
+.container2 {
+    flex: 2;
+    background-color: #1E5B5A;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Styling */
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.login h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.login input {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1rem;
+}
+
+.login input::placeholder {
+    color: #b1c1d0;
+}
+
+.login input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #b0bec5;
+}
+
+/* Button Styles */
+.login button {
+    width: 80%;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #083750;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #bbb;
+}
+
+/* Links */
+.already, .already a {
+    color: white;
+}
+
+.already a {
+    text-decoration: underline;
+    color: #ffeb3b;
+}
+
+.already a:hover {
+    color: #ffc107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #mcontainer {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .container1, .container2 {
+        width: 100%;
+    }
+}
