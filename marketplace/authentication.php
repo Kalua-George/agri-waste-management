@@ -43,11 +43,15 @@ if (isset($_POST['signin'])) {
     $check = $conn->query($verify);
 
 
+    
+
+
     if ($check->num_rows > 0) {
         session_start();
         $row = $check->fetch_assoc();
         $_SESSION['email'] = $row['email'];
-        header('Location: http://localhost/ADMIN/admin.php'); // Redirect to dashboard or home after login
+        
+        header('Location: http://localhost/agri-waste-management/marketplace/market/display.php'); // Redirect to dashboard or home after login
         exit();
     } else {
         echo 'Login failed, incorrect username or password';

@@ -26,27 +26,27 @@
       <div id="products">
         <h3>PRODUCT ACTIONS</h3>
         <div id="addProd">
-          <form action="addPr" class="newProd" id="prodAddForm">
+          <form action="script/addProduct.php" class="newProd" method="post" enctype="multipart/form-data">
             <div class="prod_field">
               <label for="prodName">PRODUCT NAME </label>
-              <input type="text" id="prodName" required />
+              <input type="text" id="prodName" name="prodName" required />
             </div>
 
             <div class="prod_field">
               <label for="prodPrice"> PRODUCT PRICE </label>
-              <input type="text" id="prodPrice" required />
+              <input type="text" id="prodPrice" name="prodPrice" required />
             </div>
 
             <div class="prod_field">
               <label for="prodImage"> IMAGE </label>
-              <input type="file" id="prodImage" required />
+              <input type="file" id="prodImage" name="prodImage" required />
             </div>
 
             <div class="prod_field">
               <label for="contact">SELLER</label>
-              <input type="text" id="contact" required />
+              <input type="text" id="contact" name="contact" required />
             </div>
-            <input type="submit" value="ADD" class="add" />
+            <input type="submit" value="ADD" class="add" name="prodAddForm"/>
           </form>
         </div>
         <div id="delProd">
@@ -164,7 +164,6 @@
     </section>
   </main>
   <script src="adminJS/toggle.js"></script>
-  <script src="addPod.js"></script>
 </body>
 
 </html>
